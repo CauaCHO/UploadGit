@@ -1,0 +1,14 @@
+>setar coisas na sessão
+import javax.servlet.http.HttpSession;
+HttpSession session = request.getSession(true);
+session.setAttribute("login", "texto");
+
+>pegar coisas da sessão
+import javax.servlet.http.HttpSession;
+HttpSession session = request.getSession(true);
+session.getAttribute("login").toString()
+
+>cancelar a sessão
+import javax.servlet.http.HttpSession;
+HttpSession session = request.getSession(true);
+session.invalidate();
